@@ -1,0 +1,11 @@
+{
+  "title": "Location Changer - Master Sahib",
+  "category": "Utilities",
+  "caption": "Virtual GPS location spoofer for testing and privacy on Android.",
+  "icon": "Globe",
+  "features": [
+    "One-click virtual GPS location teleport worldwide",
+    "Mock route simulation with speed adjustments",
+    "Secure developer mode spoofing without root"
+  ]
+}

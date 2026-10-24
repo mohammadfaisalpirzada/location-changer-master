@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface_soft" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@color/primary_dark" android:gravity="center_vertical" android:orientation="horizontal" android:padding="20dp">
+            <ImageView android:layout_width="58dp" android:layout_height="58dp" android:contentDescription="@string/app_name" android:src="@drawable/ic_launcher" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_full_name" android:textColor="#D9E2FF" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/primary_dark" app:cardCornerRadius="18dp" app:cardElevation="2dp" app:strokeColor="#5274C9" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:padding="22dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/trial_badge_background" android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:text="@string/trial_badge" android:textColor="@color/primary_dark" android:textSize="12sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/deviceIdText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:gravity="center" android:textColor="#D9E2FF" android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" app:cardCornerRadius="18dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:padding="22dp">
+                    <ImageView android:layout_width="64dp" android:layout_height="64dp" android:contentDescription="@string/fixed_test_location" android:src="@drawable/ic_map_pin" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/fixed_test_location" android:textColor="@color/text_secondary" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/fixed_coordinates" android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/trialRemainingText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:textColor="@color/primary_dark" android:textSize="16sp" android:textStyle="bold" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="14dp" android:text="@string/start_location" app:cornerRadius="14dp" app:icon="@drawable/ic_location" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/stopButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp" android:text="@string/stop_location" app:cornerRadius="14dp" />
+                    <TextView android:id="@+id/serviceStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:gravity="center" android:text="@string/location_inactive" android:textColor="@color/text_secondary" android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" app:cardBackgroundColor="@color/info_background" app:cardCornerRadius="18dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:id="@+id/mockAppStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mock_app_not_selected" android:textColor="@color/text_primary" android:textStyle="bold" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/openDeveloperOptionsButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/open_developer_options" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/setup_help" android:textColor="@color/text_secondary" android:textSize="13sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:text="@string/company_info" android:textColor="@color/text_secondary" android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
